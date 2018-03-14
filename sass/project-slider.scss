@@ -1,0 +1,116 @@
+/* Base Styles for Project Slider */
+$project_slider_background: #0e0e0e;
+$project_slider_margin: 20px 0;
+$project_slider_transition: .6s;
+
+$project_slider_large_height: 540px;
+$project_slider_medium_height: 300px;
+$project_slider_small_height: 220px;
+
+/* Hover Styles */
+$project_slider_hover_background: pink;
+
+.project {
+	background: $project_slider_background;
+	margin: $project_slider_margin;
+	position: relative;
+	overflow: hidden;
+
+	.project-face,
+	.project-back {
+		position: absolute;
+		width: 100%;
+		transition: $project_slider_transition;
+	}
+
+	.project-face {
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.project-back {
+		background: $project_slider_hover_background;
+	}
+
+	&.slide-top {
+		.project-back {
+			top: -100%;
+		}
+	}
+
+	&.slide-right {
+		.project-back {
+			left: -100%;
+		}
+	}
+
+	&.slide-bottom {
+		.project-back {
+			bottom: -100%;
+		}
+	}
+
+	&.slide-left {
+		.project-back {
+			right: -100%;
+		}
+	}
+
+	&:hover {
+		&.slide-top {
+			.project-face {
+				top: 100%;
+			}
+			.project-back {
+				top: 0;
+			}
+		}
+		&.slide-right {
+			.project-face {
+				left: 100%;
+			}
+			.project-back {
+				left: 0;
+			}
+		}
+		&.slide-bottom {
+			.project-face {
+				top: -100%;
+			}
+			.project-back {
+				bottom: 0;
+			}
+		}
+		&.slide-left {
+			.project-face {
+				left: -100%;
+			}
+			.project-back {
+				right: 0;
+			}
+		}
+	}
+
+	&.project-large {
+		height: $project_slider_large_height;
+		.project-face,
+		.project-back {
+			height: $project_slider_large_height;
+		}
+	}
+	&.project-medium {
+		height: $project_slider_medium_height;
+		.project-face,
+		.project-back {
+			height: $project_slider_medium_height;
+		}
+	}
+	&.project-small {
+		height: $project_slider_small_height;
+		.project-face,
+		.project-back {
+			height: $project_slider_small_height;
+		}
+	}
+}

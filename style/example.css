@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$_GLOBAL_TRANSITION".
-        on line 144 of sass/example.scss
+        on line 35 of sass/example.scss
 
-139: 			width: 100%;
-140: 			bottom: 0;
-141: 			height: 100%;
-142: 			background: rgba(0,0,0, 0.5);
-143: 			opacity: 0;
-144: 			transition: $_GLOBAL_TRANSITION;
-145: 			.view {
-146: 				width: 42px;
-147: 				height: 42px;
-148: 				background: url(../images/icons/share.png);
-149: 				background-position: 50% 50%;
+30: 			width: 100%;
+31: 			bottom: 0;
+32: 			height: 100%;
+33: 			background: rgba(0,0,0, 0.5);
+34: 			opacity: 0;
+35: 			transition: $_GLOBAL_TRANSITION;
+36: 			.view {
+37: 				width: 42px;
+38: 				height: 42px;
+39: 				background: url(../images/icons/share.png);
+40: 				background-position: 50% 50%;
 
 Backtrace:
-sass/example.scss:144
+sass/example.scss:35
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$_GLOBAL_TRANSITION\".\A         on line 144 of sass/example.scss\A \A 139: 			width: 100%;\A 140: 			bottom: 0;\A 141: 			height: 100%;\A 142: 			background: rgba(0,0,0, 0.5);\A 143: 			opacity: 0;\A 144: 			transition: $_GLOBAL_TRANSITION;\A 145: 			.view {\A 146: 				width: 42px;\A 147: 				height: 42px;\A 148: 				background: url(../images/icons/share.png);\A 149: 				background-position: 50% 50%;"; }
+  content: "Error: Undefined variable: \"$_GLOBAL_TRANSITION\".\A         on line 35 of sass/example.scss\A \A 30: 			width: 100%;\A 31: 			bottom: 0;\A 32: 			height: 100%;\A 33: 			background: rgba(0,0,0, 0.5);\A 34: 			opacity: 0;\A 35: 			transition: $_GLOBAL_TRANSITION;\A 36: 			.view {\A 37: 				width: 42px;\A 38: 				height: 42px;\A 39: 				background: url(../images/icons/share.png);\A 40: 				background-position: 50% 50%;"; }
