@@ -1,0 +1,46 @@
+/* Start Hero */
+$hero_big_fontFamily: 'Roboto', sans-serif;
+$hero_big_fontSize: 4.275em;
+$hero_big_color: #FFF;
+$hero_big_lineHeight: 1.3045em;
+$hero_big_letterSpacing: .075em;
+
+$hero_small_fontFamily: "Open Sans", open-sans, sans-serif;
+$hero_small_fontSize: 1.5em;
+$hero_small_fontStyle: italic;
+$hero_small_fontWeight: 300;
+$hero_small_letterSpacing: 0.05em;
+$hero_small_color: #FFF;
+/* End Hero */
+
+
+.hero {
+	height: 85vh;
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	flex-wrap: wrap;
+
+	h1 {
+		font-family: $hero_big_fontFamily;
+		font-size: $hero_big_fontSize;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: $hero_big_letterSpacing;
+		line-height: $hero_big_lineHeight;
+		color: $hero_big_color;
+	    text-transform: uppercase;
+	    margin-bottom: 0;
+	    margin-top: 0;
+	}
+
+	h2 {
+		color: $hero_small_color;
+		font-family: $hero_small_fontFamily;
+		font-size: $hero_small_fontSize;
+		font-style: $hero_small_fontStyle;
+		font-weight: $hero_small_fontWeight;
+		letter-spacing: $hero_small_letterSpacing;
+		margin-bottom: .375em;
+	    margin-top: 0;
+	}
+}

@@ -1,0 +1,120 @@
+/* Start Menu */
+$menuBg: #12161b;
+$menuLinkColor: #FFFFFF;
+$homeLinkColor: #17c0eb;
+$aboutLinkColor: #3ae374;
+$workLinkcolor: #E74C3C;
+$contactLinkColor: #F37;
+/* End Menu */
+@mixin prettyLinker($color) {
+	border-bottom: 3px solid $color;
+}
+.menu {
+	height: 15vh;
+	background: $menuBg;
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+
+	&.sticky {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		max-height: 100px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			&.active {
+				&.home {
+					a {
+						@include prettyLinker($homeLinkColor);
+						&:hover {
+							@include prettyLinker($homeLinkColor);
+						}
+					}
+				}
+				&.about {
+					a {
+						@include prettyLinker($aboutLinkColor);
+						&:hover {
+							@include prettyLinker($aboutLinkColor);
+						}
+					}
+				}
+				&.work {
+					a {
+						@include prettyLinker($workLinkcolor);
+						&:hover {
+							@include prettyLinker($workLinkcolor);
+						}
+					}
+				}
+				&.contact {
+					a {
+						@include prettyLinker($contactLinkColor);
+						&:hover {
+							@include prettyLinker($contactLinkColor);
+						}
+					}
+				}
+				a {
+					opacity: 1;
+				}
+			}
+			&:hover {
+				&.home {
+					a {
+						@include prettyLinker($homeLinkColor);
+						&:hover {
+							@include prettyLinker($homeLinkColor);
+						}
+					}
+				}
+				&.about {
+					a {
+						@include prettyLinker($aboutLinkColor);
+						&:hover {
+							@include prettyLinker($aboutLinkColor);
+						}
+					}
+				}
+				&.work {
+					a {
+						@include prettyLinker($workLinkcolor);
+						&:hover {
+							@include prettyLinker($workLinkcolor);
+						}
+					}
+				}
+				&.contact {
+					a {
+						@include prettyLinker($contactLinkColor);
+						&:hover {
+							@include prettyLinker($contactLinkColor);
+						}
+					}
+				}
+			}
+		}
+	}
+	a {
+		color: $menuLinkColor !important;
+		opacity: .4;
+		transition: $_GLOBAL_TRANSITION;
+		cursor: pointer;
+		padding: 0 15px;
+		margin: 0 10px;
+		border-bottom: 3px solid transparent;
+		padding-bottom: 10px;
+		-webkit-backface-visibility: hidden;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@import "common.scss";
+@import "hero.scss";
+@import "menu.scss";
+@import "body.scss";
+@import "example.scss";
+
+@media(min-width: 992px) {
+	.example {
+		margin-bottom: 0em;
+	}
+}
+@media(min-width: 576px) {
+	.example {
+		margin-bottom: 3em;
+	}
+}
+@media(max-width: 576px) {
+	.example {
+		margin-bottom: 5em;
+	}
+}

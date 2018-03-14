@@ -1,0 +1,35 @@
+/* Start Body */
+$body_padding: 150px 50px;
+$body_alt_background: #0b0e13;
+/* Start Body Title */
+$body_title_color: #FFF;
+$body_title_fontSize: 1.9em;
+$body_title_fontStyle: italic;
+$body_title_marginBottom: 0.2em;
+/* End Body Title */
+
+.body {
+	.row {
+		padding: $body_padding;
+		&.alternate {
+			background-color: $body_alt_background;
+		}
+	}
+	.title {
+		font-size: $body_title_fontSize;
+		font-style: $body_title_fontStyle;
+		color: $body_title_color;
+		margin-bottom: $body_title_marginBottom;
+		display: inline-block;
+	}
+	.section-body {
+		font-size: $content_fontSize;
+		line-height: $content_lineHeight;
+		color: $content_color;
+
+		p {
+			margin-bottom: 0;
+		}
+
+	}
+}

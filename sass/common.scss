@@ -1,0 +1,34 @@
+// Just a bunch of standard styles across the website.
+$mainFont: "Open Sans", sans-serif;
+$mainBg: #191d22;
+$linkColour: #17c0eb;
+
+$content_color: #797979;
+$content_fontSize: 0.95em;
+$content_lineHeight: 1.9em;
+
+$break_spacer_margin: 1em 0;
+
+$_GLOBAL_TRANSITION: .3s;
+
+body {
+	background: $mainBg;
+	font-family: $mainFont;
+}
+a,
+a:hover,
+a:focus,
+a:visited {
+	color: $linkColour;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 3px solid transparent;
+	transition: $_GLOBAL_TRANSITION;
+}
+a:hover {
+	border-bottom-color: $linkColour;
+}
+
+.break {
+	margin: $break_spacer_margin;
+}
