@@ -1,0 +1,21 @@
+$footer_main_color: #bfbfbf;
+$footer_link_color: #17c0eb;
+
+.footer {
+	margin: 150px 0 0;
+	padding: 35px 0 25px;
+	text-align: center;
+	background: $alternate_color;
+	.fa-heart {
+		color: #F47;
+		//animation: shake 2s infinite;
+	}
+	a {
+		color: $footer_link_color;
+	}
+	div {
+		color: $footer_main_color !important;
+		font-style: italic;
+		opacity: .9;
+	}
+}

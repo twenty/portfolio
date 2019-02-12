@@ -1,22 +1,9 @@
+@import "mixins.scss";
+@import "keyframes.scss";
 @import "common.scss";
-@import "hero.scss";
 @import "menu.scss";
+@import "hero.scss";
 @import "body.scss";
-@import "example.scss";
-@import "project-slider.scss";
-
-@media(min-width: 992px) {
-	.example {
-		margin-bottom: 0em;
-	}
-}
-@media(min-width: 576px) {
-	.example {
-		margin-bottom: 3em;
-	}
-}
-@media(max-width: 576px) {
-	.example {
-		margin-bottom: 5em;
-	}
-}
+@import "form.scss";
+@import "footer.scss";
+@import "media-queries.scss";

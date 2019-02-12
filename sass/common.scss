@@ -1,34 +1,49 @@
-// Just a bunch of standard styles across the website.
-$mainFont: "Open Sans", sans-serif;
-$mainBg: #191d22;
-$linkColour: #17c0eb;
+/*
+	Common styles for the site
+*/
+$main_background: #eeeeee;
+$main_font_family: "Open Sans", sans-serif;
+$main_link_color: #E74C3C;
+$alternate_color: #0C0E13;
 
-$content_color: #797979;
-$content_fontSize: 0.95em;
-$content_lineHeight: 1.9em;
+$main_content_color: #0B0C12;
+$main_content_fontSize: 0.88em;
+$main_content_lineHeight: 1.9em;
 
-$break_spacer_margin: 1em 0;
-
+/* 
+	Generic stuff, settings, etc.
+*/
 $_GLOBAL_TRANSITION: .3s;
+$break_spacer_margin: 3.5em 0;
 
 body {
-	background: $mainBg;
-	font-family: $mainFont;
+	background: $main_background;
+	font: {
+		family: $main_font_family;
+		size: $main_content_fontSize;
+	};
+}
+::selection {
+	color: #FFF;
+	background-color: $alternate_color;
 }
 a,
 a:hover,
 a:focus,
 a:visited {
-	color: $linkColour;
+	color: $main_link_color;
 	text-decoration: none;
 	padding-bottom: 3px;
-	border-bottom: 3px solid transparent;
 	transition: $_GLOBAL_TRANSITION;
 }
-a:hover {
-	border-bottom-color: $linkColour;
+* {
+	color: $main_content_color;
 }
-
 .break {
 	margin: $break_spacer_margin;
+}
+.container {
+	&.fixed {
+		max-width: 900px;
+	}
 }

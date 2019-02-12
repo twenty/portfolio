@@ -1,0 +1,100 @@
+.fatField {
+  color: #3b3b3b;
+  height: 50px !important;
+  font-size: 16px;
+  background: white;
+  padding-top: 0;
+  margin: 5px 0;
+  border: 1px solid #cccccc;
+  padding-bottom: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  padding: 0 10px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+}
+.fatField:hover {
+  border-color: #8d8d8d;
+}
+.fatField:focus {
+  outline-style: none;
+  border-color: #8d8d8d;
+}
+.fatField.error {
+  border-color: #E74C3C;
+}
+button.fatField {
+  background: transparent;
+  box-shadow: none;
+  border-color: #F37;
+  color: #F37;
+  font-size: 15px;
+  font-weight: normal;
+  height: auto !important;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+button.fatField:hover {
+  background: #F37;
+  border-color: #F37;
+  color: #FFF;
+}
+button.fatField.loading {
+  background: #F37;
+  border-color: #F37;
+  color: #FFF;
+}
+
+textarea.fatField {
+  height: 150px !important;
+  padding: 10px;
+  resize: none;
+}
+
+select.fatField {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: url(/wp-content/themes/jevelin/img/down-arrow.png) no-repeat;
+  background-size: 10px;
+  background-position: 95% 50%;
+  border-color: #8d8d8d;
+}
+select.fatField::-ms-expand {
+  display: none;
+}
+
+input::placeholder, textarea.fatField::placeholder {
+  color: #cbcbcb;
+}
+
+input, textarea, select.fatField {
+  width: 100% !important;
+}
+
+.errors {
+  line-height: 50px;
+  font-size: 12px;
+  color: #E74C3C;
+}
+.errors i {
+  color: #E74C3C;
+}
+
+.form-success {
+  text-align: center;
+  font-size: 15px;
+  padding: 40px 0px;
+  color: #27ae60;
+}
+.form-success i {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #27ae60;
+}
+
+/*# sourceMappingURL=form.css.map */

@@ -1,26 +1,22 @@
-/* Start Menu */
-$menuBg: #12161b;
-$menuLinkColor: #FFFFFF;
-$homeLinkColor: #17c0eb;
-$aboutLinkColor: #3ae374;
-$workLinkcolor: #E74C3C;
-$contactLinkColor: #F37;
-/* End Menu */
-@mixin prettyLinker($color) {
-	border-bottom: 3px solid $color;
-}
+$menu_height: 90px;
+$menu_background: #12161b;
+$menu_link_color: #FFFFFF;
+$menu_link_home_color: #17c0eb;
+$menu_link_about_color: #3ae374;
+$menu_link_work_color: #E74C3C;
+$menu_link_contact_color: #F37;
+
 .menu {
-	height: 15vh;
-	background: $menuBg;
-	display: flex;
-	align-items: center;
-	padding: 0 50px;
+	height: 90px;
 
 	&.sticky {
-		position: sticky;
+		background: #0C0E13;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
 		top: 0;
-		z-index: 10;
-		max-height: 100px;
+		right: 0; 
+		transition: $_GLOBAL_TRANSITION;
 	}
 
 	ul {
@@ -30,80 +26,37 @@ $contactLinkColor: #F37;
 			list-style-type: none;
 			display: inline-block;
 			&.active {
-				&.home {
-					a {
-						@include prettyLinker($homeLinkColor);
-						&:hover {
-							@include prettyLinker($homeLinkColor);
-						}
-					}
-				}
-				&.about {
-					a {
-						@include prettyLinker($aboutLinkColor);
-						&:hover {
-							@include prettyLinker($aboutLinkColor);
-						}
-					}
-				}
-				&.work {
-					a {
-						@include prettyLinker($workLinkcolor);
-						&:hover {
-							@include prettyLinker($workLinkcolor);
-						}
-					}
-				}
-				&.contact {
-					a {
-						@include prettyLinker($contactLinkColor);
-						&:hover {
-							@include prettyLinker($contactLinkColor);
-						}
-					}
-				}
 				a {
 					opacity: 1;
 				}
-			}
-			&:hover {
 				&.home {
 					a {
-						@include prettyLinker($homeLinkColor);
-						&:hover {
-							@include prettyLinker($homeLinkColor);
-						}
+						border-bottom: 3px solid $menu_link_home_color;
 					}
 				}
 				&.about {
 					a {
-						@include prettyLinker($aboutLinkColor);
-						&:hover {
-							@include prettyLinker($aboutLinkColor);
-						}
+						border-bottom: 3px solid $menu_link_about_color;
 					}
 				}
 				&.work {
 					a {
-						@include prettyLinker($workLinkcolor);
-						&:hover {
-							@include prettyLinker($workLinkcolor);
-						}
+						border-bottom: 3px solid $menu_link_work_color;
 					}
 				}
 				&.contact {
 					a {
-						@include prettyLinker($contactLinkColor);
-						&:hover {
-							@include prettyLinker($contactLinkColor);
-						}
+						border-bottom: 3px solid $menu_link_contact_color;
 					}
 				}
 			}
 		}
 	}
 	a {
-		color: $menuLinkColor !important;
+		color: $menu_link_color !important;
+		height: $menu_height;
+		line-height: $menu_height;
+		display: block;
 		opacity: .4;
 		transition: $_GLOBAL_TRANSITION;
 		cursor: pointer;
@@ -112,9 +65,5 @@ $contactLinkColor: #F37;
 		border-bottom: 3px solid transparent;
 		padding-bottom: 10px;
 		-webkit-backface-visibility: hidden;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 }

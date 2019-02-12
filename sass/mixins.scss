@@ -1,0 +1,36 @@
+@mixin displayFlex() {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+
+@mixin flexDirection($dir) {
+	-webkit-flex-direction: $dir;
+    -moz-flex-direction: $dir;
+    -ms-flex-direction: $dir;
+    -o-flex-direction: $dir;
+    flex-direction: $dir;
+}
+
+@mixin flexWrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -o-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin flex($flex) {
+	-webkit-flex: $flex;
+    -moz-flex: $flex;
+    -ms-flex: $flex;
+    -o-flex: $flex;
+    flex: $flex;
+}
+
+@mixin _reset() {
+    margin: 0;
+    padding: 0;
+}

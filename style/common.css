@@ -1,2 +1,40 @@
-body{background:#191d22;font-family:"Open Sans",sans-serif}a,a:hover,a:focus,a:visited{color:#17c0eb;text-decoration:none;padding-bottom:3px;border-bottom:3px solid transparent;transition:.3s}a:hover{border-bottom-color:#17c0eb}.break{margin:1em 0}
+/*
+	Common styles for the site
+*/
+/* 
+	Generic stuff, settings, etc.
+*/
+body {
+  background: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.88em;
+}
+
+::selection {
+  color: #FFF;
+  background-color: #0C0E13;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: #E74C3C;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+* {
+  color: #0B0C12;
+}
+
+.break {
+  margin: 3.5em 0;
+}
+
+.container.fixed {
+  max-width: 900px;
+}
+
 /*# sourceMappingURL=common.css.map */
