@@ -1,0 +1,74 @@
+{
+    "Work": {
+        "title": "Recent Work",
+        "examples": [{
+            "title": "Choice One",
+            "href": "https://choiceone.com.au/",
+            "description": "A recruitment consultancy specialising in Medical and Healthcare, Professionals and Business Support, Engineering and Trades and HR Services.",
+            "tags": ["WordPress", "Custom Theme Development"],
+            "image": {
+                "url": "choiceone_1.png",
+                "align": "right"
+            }
+        },{
+            "title": "Big Umbrella",
+            "href": "http://bigumbrella.com.au/",
+            "description": "A recruitment consultancy specialising in workplace rehabilitation, allied health and insurance.",
+            "tags": ["WordPress", "Custom Theme Development"],
+            "image": {
+                "url": "big_umbrella_1.png",
+                "align": "left"
+            }
+        },{
+            "title": "Australian Vintage",
+            "href": "http://careers.australianvintage.com.au/",
+            "description": "One of the largest vineyard owners and managers in Australia, Australian Vintage is an Australian leading wine company, priding its self on producing outstanding & innovative wines for wine lovers around the world.",
+            "tags": ["WordPress", "Custom Theme Development"],
+            "image": {
+                "url": "australian_vintage1.png",
+                "align": "right"
+            }
+        },{
+            "title": "House With No Steps",
+            "href": "http://careers.hwns.com.au/",
+            "description": "One of Australia's leading providers of disability services, House with No Steps are dedicated to ensuring people with a disability have greater choice, control and freedom.",
+            "tags": ["WordPress", "Custom Theme Development"],
+            "image": {
+                "url": "hwns_1.png",
+                "align": "left"
+            }
+        }]
+    },
+    "Contact": {
+        "title": "Contact",
+        "form": {
+            "endpoint": "./contact.php",
+            "fields": [{
+                "type": "text",
+                "name": "name",
+                "placeholder": "Your Name",
+                "mandatory": true,
+                "col": 6
+            },{
+                "type": "text",
+                "name": "email",
+                "placeholder": "Your Email",
+                "mandatory": true,
+                "col": 6
+            },{
+                "type": "text",
+                "name": "subject",
+                "placeholder": "Subject"
+            },{
+                "type": "textarea",
+                "name": "message",
+                "placeholder": "Your Message",
+                "mandatory": true
+            }],
+            "submit": {
+                "align": "right",
+                "text": "Send"
+            }
+        }
+    }
+}
